@@ -21,11 +21,15 @@
 
 <% if (msg!="") {%>
 								<p> <%= msg %> </p>
-								<p> Prix du m² du bien :  <%= data.lbcData.price / data.lbcData.surface %> </p>
-								<p> Prix du m² de la zone : <%= data.maData.priceHouse %> </p>
-								<p> Prix du bien : <%= data.lbcData.price %> </p>
-								<p> Prix théorique du bien : <%= data.maData.priceHouse * data.lbcData.surface %> </p>
-
+								<p> Prix du m² du bien :  <%= data.lbcData.price / data.lbcData.surface %> €</p>
+								<p> Prix du m² de la zone : <%= data.maData.priceHouse %> €</p>
+								<p> Prix du bien : <%= data.lbcData.price %> €</p>
+								<p> Prix théorique du bien : <%= data.maData.priceHouse * data.lbcData.surface %> €</p>
+								<% if (data.maData.priceHouse * data.lbcData.surface> data.lbcData.price ) {%>
+								<p> GAIN ESTIME : <%= data.maData.priceHouse * data.lbcData.surface- data.lbcData.price%> € </p>
+								<%} else {%>
+								<p> PERTE ESTIME : <%= data.lbcData.price - data.maData.priceHouse * data.lbcData.surface %> €</p>
+								<% }%>
 							<%} else {%>
 								<p> <%= msg %> </p>
 					<% }%>
