@@ -135,9 +135,9 @@ function isGoodDeal(lbcData,maData)
 	//console.log(maData)
 
 	if(maData>adPricePerSqM)
-		{ affaire = pourcentage + "% en dessous du marché: BONNE AFFAIRE!"}
+		{ affaire = "BONNE AFFAIRE!"}
 	else
-		{ affaire =	pourcentage + "% au dessus du marché: MAUVAISE AFFAIRE"}
+		{ affaire =	"MAUVAISE AFFAIRE"}
 
 	return affaire;
 }
@@ -187,7 +187,6 @@ function getMAEstimation(lbcData, routeResponse)
 						routeResponse.render('pages/index', 
 						{
 							msg:msg,
-							lbcData,ref,	
 							data: {
 									lbcData,
 									maData,

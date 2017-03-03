@@ -21,13 +21,17 @@
 
 <% if (msg!="") {%>
 								<p> <%= msg %> </p>
+								<p> Prix du m² du bien :  <%= data.lbcData.price / data.lbcData.surface %> </p>
+								<p> Prix du m² de la zone : <%= data.maData.priceHouse %> </p>
+								<p> Prix du bien : <%= data.lbcData.price %> </p>
+								<p> Prix théorique du bien : <%= data.maData.priceHouse * data.lbcData.surface %> </p>
+
 							<%} else {%>
 								<p> <%= msg %> </p>
 					<% }%>
 					
 				
 
-<p> Merci de regarder la console... </p>
 </form>
 
 </div>
