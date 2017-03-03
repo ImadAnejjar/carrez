@@ -1,0 +1,25 @@
+body {
+    background: url('DSC_6515.jpg') ;
+    color: black;
+    padding: 10%;
+}
+
+#shape
+{
+	  background: #E3E3E3;
+    right: 10%;
+    width:400px;
+    padding:25px;
+    border: 3px ;
+    border-radius:50px;
+    opacity: 0.8;
+
+}
+
+button:hover#comparer
+{
+  font-family: Arial;
+  position:center;
+  background-color:black;
+  color: white;
+}

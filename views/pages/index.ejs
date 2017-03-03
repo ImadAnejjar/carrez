@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- formulaire et bouton -->
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title> WS3 - Comparatif LeBonCoin </title>
+</head>
+
+<body> 
+
+    <div id="shape">
+    <h1> Comparateur de biens immobiliers </h1>
+    <p> Lien LeBonCoin: </p>
+<form action="scrape" method="post">
+			
+    <button id="comparer"> Comparer </button>
+    <input class="model" type="text" name="lien" id="lien" placeholder="Site"/>
+
+<% if (msg!="") {%>
+								<p> <%= msg %> </p>
+							<%} else {%>
+								<p> <%= msg %> </p>
+					<% }%>
+					
+				
+
+<p> Merci de regarder la console... </p>
+</form>
+
+</div>
+
+</body>

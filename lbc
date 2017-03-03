@@ -1,0 +1,17 @@
+{
+    "title": "Real estate",
+    "type": "object",
+    "properties": {
+
+	"price": {
+            "type": "integer"
+        },
+        "surface m²": {
+            "type": "double"
+        },
+        "town": {
+            "type": "string"
+        }
+       
+    }
+}
